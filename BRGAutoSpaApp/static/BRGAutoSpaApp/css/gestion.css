@@ -12,11 +12,15 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Raleway';
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 p {
   line-height: 1.75;
+}
+
+.mail {
+  color: #ffffff;
 }
 
 .text-faded {
@@ -28,7 +32,7 @@ p {
   margin-bottom: 5rem;
   text-transform: uppercase;
   line-height: 1;
-  font-family: 'Raleway';
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .site-heading .site-heading-upper {
@@ -80,8 +84,8 @@ p {
 }
 
 #mainNav {
-  background-color: rgb(41, 109, 15);
-  font-family: 'Raleway';
+  background-color: rgb(0, 0, 0);
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #mainNav .navbar-brand {
@@ -95,7 +99,6 @@ p {
 
 #mainNav .navbar-nav .nav-item.active .nav-link {
   color: #ffffff;
-  text-decoration: underline;
 }
 
 @media (min-width: 992px) {
@@ -104,11 +107,10 @@ p {
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
     color: rgba(255, 255, 255, 0.4);
-    text-decoration: underline;
+    font-family: 'Raleway'; 
   }
   #mainNav .navbar-nav .nav-item.active .nav-link:hover {
     color: #ffffff;
-    text-decoration: underline;
   }
 }
 
@@ -134,7 +136,7 @@ p {
     left: 600;
     width: 60%;
     margin-top: 3rem;
-    background-color: rgb(41, 109, 15);
+    background-color: rgb(0, 0, 0);
     color: cornsilk;
     position: absolute;
   }
@@ -162,7 +164,7 @@ p {
   position: relative;
   padding: 3rem;
   margin: 0.5rem;
-  background-color: rgb(41, 109, 15);
+  background-color: rgb(0, 0, 0);
   color: cornsilk;
 }
 
@@ -229,7 +231,7 @@ p {
 }
 
 .footer {
-   background-color: rgb(41, 109, 15);
+   background-color: rgb(0, 0, 0);
 }
 
 
@@ -250,6 +252,17 @@ p {
 
 .mbt{
   padding-top: 2rem;
+  color: #ffffff;
+}
+
+.mail:hover{
+  padding-top: 2rem;
+  color:  #1feb52;
+}
+
+.mail:active{
+  padding-top: 2rem;
+  color: #ffffff;
 }
 
 .mbt1{
