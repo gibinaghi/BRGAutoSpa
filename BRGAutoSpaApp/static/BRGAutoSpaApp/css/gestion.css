@@ -290,3 +290,21 @@ ul.errorlist{
   font-style: italic;
   color: red;
 }
+
+/* formulario */
+.contenedorFormulario {
+  background-color: black;
+  width: 50%;
+  margin: 10px auto;
+  border-radius: 5px;
+  padding: 5px 0px;
+}
+
+.form {
+  text-align: center;
+}
+
+.tabla {
+  color: white;
+  margin: 20px auto;
+}

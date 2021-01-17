@@ -1,0 +1,16 @@
+{% extends "BRGAutoSpaApp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="contenedorFormulario">
+   <form class="form" action="" method="POST">
+      {% csrf_token %}
+      <table class="tabla"> {{miformulario.as_table}} </table>
+      <input type="submit" value="Enviar" style="width: 150px;">
+   </form>
+</div>
+
+  
+{% endblock %}

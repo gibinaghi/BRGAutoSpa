@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'BRGAutoSpaApp',
     'servicios',
+    'contacto',
 ]
 
 MIDDLEWARE = [
