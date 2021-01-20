@@ -5,6 +5,13 @@
 {% block content %}
 
 <div class="contenedorFormulario">
+
+   {% if "valido" in request.GET %}
+
+   <p style="color: white;"> La información se ha enviado correctamente </p>
+
+   {% endif %}
+
    <form class="form" action="" method="POST">
       {% csrf_token %}
       <table class="tabla"> {{miformulario.as_table}} </table>
