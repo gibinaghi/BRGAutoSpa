@@ -7,21 +7,22 @@
 <div class="container">
 
    <div style="float: right;">
-      <p style="color:aliceblue;">Texto de prueba</p>
+      
+      {% include "carro/widget.html" %}
    </div>
 
  <div class="row">
    
       {% for producto in productos %}
 
-      <div class="col-md-3"> <!--ver cantidad de columnas luego-->
+      <div class="col-md-6"> <!--ver cantidad de columnas luego-->
 
-         <div class="card text-center" style="width: 18rem; margin: 7px 7px;">
+         <div class="card text-center" style="width: 18rem; margin: 15px 15px;">
             <img class="card-img-top" src="{{producto.imagen.url}}" alt="Card image cap">
             <div class="card-body">
             <h5 class="card-title">{{producto.nombre}}</h5>
             <p class="card-text">$ {{producto.precio}}</p>
-            <a href="#" class="btn btn-dark">Agregar al carro</a>
+            <a href="{% url 'carro:agregar' producto.id %}" class="btn btn-dark">Agregar al carro</a>
             </div>
          </div>
 
