@@ -1,7 +1,7 @@
 from lib2to3.refactor import get_all_fix_names
 from tabnanny import verbose
 from django.db import models
-from django.contrib.auth.models import get_user_model
+from django.contrib.auth import get_user_model
 from tienda.models import Producto
 from django.db.models import F, Sum, FloatField
 
@@ -28,7 +28,7 @@ class Pedido(models.Model):  #hereda de models.Model
         # crear la table en la base de datos
         db_table = 'pedidos'
         verbose_name = 'pedido'
-        verbos_name_plural = 'pedidos'
+        verbose_name_plural = 'pedidos'
         ordering = ['id']
 
 
@@ -45,5 +45,5 @@ class LineaPedido(models.Model):
     class Meta:
         db_table = 'lineapedidos'
         verbose_name = 'Linea Pedido'
-        verbos_name_plural = 'Lineas Pedidos'
+        verbose_name_plural = 'Lineas Pedidos'
         ordering = ['id']
